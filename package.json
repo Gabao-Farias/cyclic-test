@@ -10,7 +10,8 @@
     "migrations:revert": "yarn typeorm migration:revert",
     "test": "NODE_ENV=test jest",
     "build": "tsc --build",
-    "build:clean": "tsc --build --clean"
+    "build:clean": "tsc --build --clean",
+    "prepublish": "tsc --build"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
@@ -25,11 +26,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
-    "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.38",
     "uuid": "^8.3.2"
   }
 }
