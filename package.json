@@ -1,14 +1,16 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "main": "./src/index.ts",
+  "main": "./dist/src/index.js",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=test ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "migrations:run": "yarn typeorm migration:run",
     "migrations:revert": "yarn typeorm migration:revert",
-    "test": "NODE_ENV=test jest"
+    "test": "NODE_ENV=test jest",
+    "build": "tsc --build",
+    "build:clean": "tsc --build --clean"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
