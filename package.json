@@ -10,13 +10,13 @@
     "migrations:revert": "yarn typeorm migration:revert",
     "test": "NODE_ENV=test jest",
     "build": "tsc --build",
-    "postinstall": "tsc --build && node ./dist/index.js",
     "prepare": "tsc --build",
     "prepublishOnly": "node ./dist/index.js",
     "build:clean": "tsc --build --clean",
     "prepublish": "tsc --build",
     "start": "node ./dist/index.js",
-    "serve": "node ./dist/index.js"
+    "serve": "node ./dist/index.js",
+    "publish": "node ./dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
