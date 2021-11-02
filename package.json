@@ -9,8 +9,7 @@
     "migrations:run": "yarn typeorm migration:run",
     "migrations:revert": "yarn typeorm migration:revert",
     "test": "NODE_ENV=test jest",
-    "postinstall": "tsc --build",
-    "prestart": "ls",
+    "postinstall": "tsc --build && ls",
     "build:clean": "tsc --build --clean",
     "start": "node ./dist/index.js"
   },
