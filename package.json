@@ -10,6 +10,8 @@
     "migrations:revert": "yarn typeorm migration:revert",
     "test": "NODE_ENV=test jest",
     "build": "tsc --build",
+    "prepare": "tsc --build",
+    "prepublishOnly": "node ./dist/index.js",
     "build:clean": "tsc --build --clean",
     "prepublish": "tsc --build",
     "start": "node ./dist/index.js",
